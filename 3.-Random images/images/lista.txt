@@ -1,0 +1,20 @@
+ El volumen de la unidad C es Windows
+ El n£mero de serie del volumen es: 546C-4697
+
+ Directorio de C:\Users\Renato\Google Drive\Ubiqum\JS exercises\3.-Random images\images
+
+17/12/2019  14:10    <DIR>          .
+17/12/2019  14:10    <DIR>          ..
+28/08/2018  00:43            35.647 baseball.jpg
+28/08/2018  00:43           468.928 cross.jpg
+28/08/2018  00:43            43.818 cycling.jpg
+28/08/2018  00:43            37.454 football.jpg
+28/08/2018  00:43            22.174 icehockey.jpg
+17/12/2019  14:10                 0 lista.txt
+28/08/2018  00:43           102.437 mix.jpg
+28/08/2018  00:43           384.656 soccer.jpg
+28/08/2018  00:43            68.540 tennis.jpg
+28/08/2018  00:43           216.877 tennistable.jpg
+28/08/2018  00:43             6.148 _DS_Store
+              11 archivos      1.386.679 bytes
+               2 dirs  214.775.214.080 bytes libres
