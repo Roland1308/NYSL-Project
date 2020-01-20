@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="nysl_logo.png" type="image/png" sizes="16x16" />
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="./styles/nyslflex.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="clearfix">
+      <header>
+        <img class="main_logo" src="nysl_logoshdw.png" alt="NYSL Logo" />
+        <h1 class="main_title">Northside Youth Soccer League</h1>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="game_info.html">Game Info</a>
+          </li>
+          <li>
+            <a href="rules.html">Rules and Policies</a>
+          </li>
+          <li class="active">Register</li>
+        </ul>
+      </nav>
+      <div class="news">
+        <div id="newsspeed" style="animation-duration: 4s;">
+        </div>
+        <script src="main.js"></script>
+      </div>
+      <main class="full">
+        <div>
+          <img class="ball" src="SoccerBall.gif" alt="" />
+        </div>
+        <div>
+          <img class="ball1" src="SoccerBall.gif" alt="" />
+        </div>
+
+        <h2>Registration Form</h2>
+        <div class="registration">
+          <form action="./show_data-formatted.html" method="get">
+            <p>
+              <span>* Required Fields</span>
+            </p>
+            <p></p>
+            <div class="row">
+              <div>
+                Player*:
+              </div>
+              <div style="flex-grow: 3;">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Player’s First Name"
+                  required
+                />
+              </div>
+              <div style="flex-grow: 1;">
+                <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                Direction 1*:
+              </div>
+              <div style="flex-grow: 1;">
+                <input type="text" name="address" placeholder="Address" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                Direction 2:
+              </div>
+              <div style="flex-grow: 6;">
+                <input type="text" name="city" placeholder="City" />
+              </div>
+              <div style="flex-grow: 1;">
+                <input type="number" name="zipcode" placeholder="Zip Code" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div style="flex-grow: 0;">
+                Birth Date*:
+              </div>
+              <div style="flex-grow: 1;">
+                <input type="date" name="birth" required />
+              </div>
+              <div style="flex-grow: 5;">
+                Gender*:<input
+                  type="radio"
+                  name="gender"
+                  id="fem"
+                  value="Female"
+                  required
+                />
+                <label for="fem">Female</label>
+                <input type="radio" name="gender" id="mal" value="Male" />
+                <label for="mal">Male</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                Grade:
+              </div>
+              <div>
+                <input type="radio" id="pre" name="grade" value="Pre-School" />
+                <label for="pre">Pre-School</label>
+                <input type="radio" id="1st" name="grade" value="1st" />
+                <label for="1st">1<sup>st</sup></label>
+                <input type="radio" id="2st" name="grade" value="2nd" />
+                <label for="2st">2<sup>nd</sup></label>
+                <input type="radio" id="3st" name="grade" value="3rd" />
+                <label for="3st">3<sup>rd</sup></label>
+                <input type="radio" id="4st" name="grade" value="5th" />
+                <label for="4st">4<sup>th</sup></label>
+                <input type="radio" id="5st" name="grade" value="6th" />
+                <label for="5st">5<sup>th</sup></label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                Parent/Guardian*:
+              </div>
+              <div style="flex-grow: 1;">
+                <input
+                  type="text"
+                  name="parent"
+                  placeholder="Adult's Name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                Contact*:
+              </div>
+              <div style="flex-grow: 1;">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone nr. (123/123456)"
+                  pattern="[0-9]{3}/[0-9]{6}"
+                  required
+                />
+              </div>
+              <div style="flex-grow: 20;">
+                <input type="email" name="email" placeholder="E-Mail Address" />
+              </div>
+            </div>
+
+            <p>
+              <span>Which elementary schools do you live near?</span>
+            </p>
+            <div class="row">
+              <div class="column">
+                <div style="flex-grow: 1;">
+                  <span>First Closest School*:</span>
+                </div>
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="firstclosest"
+                      id="1aj"
+                      value="AJ Katzenmaier"
+                      required
+                    />
+                    <label for="1aj">AJ Katzenmaier</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="firstclosest"
+                      id="1marj"
+                      value="Marjorie P Hart"
+                    />
+                    <label for="1marj">Marjorie P Hart</label>
+                  </div>
+                </div>
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="firstclosest"
+                      id="1green"
+                      value="Greenbay"
+                    />
+                    <label for="1green">Greenbay</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="firstclosest"
+                      id="1north"
+                      value="North Elementary"
+                    />
+                    <label for="1north">North Elementary</label>
+                  </div>
+                </div>
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="firstclosest"
+                      id="1how"
+                      value="Howard A Yeager"
+                    />
+                    <label for="1how">Howard A Yeager</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="firstclosest"
+                      id="1south"
+                      value="South Elementary"
+                    />
+                    <label for="1south">South Elementary</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div style="flex-grow: 1;">
+                  <span>Second Closest School:</span>
+                </div>
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="secondclosest"
+                      id="2aj"
+                      value="AJ Katzenmaier"
+                      required
+                    />
+                    <label for="2aj">AJ Katzenmaier</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="secondclosest"
+                      id="2marj"
+                      value="Marjorie P Hart"
+                    />
+                    <label for="2marj">Marjorie P Hart</label>
+                  </div>
+                </div>
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="secondclosest"
+                      id="2green"
+                      value="Greenbay"
+                    />
+                    <label for="2green">Greenbay</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="secondclosest"
+                      id="2north"
+                      value="North Elementary"
+                    />
+                    <label for="2north">North Elementary</label>
+                  </div>
+                </div>
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="secondclosest"
+                      id="2how"
+                      value="Howard A Yeager"
+                    />
+                    <label for="2how">Howard A Yeager</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="radio"
+                      name="secondclosest"
+                      id="2south"
+                      value="South Elementary"
+                    />
+                    <label for="2south">South Elementary</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              <span>What position(s) do you normally play?</span>
+              (check all that apply)
+            </p>
+            <div class="row">
+              <div class="column">
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="checkbox"
+                      name="normalplay1"
+                      id="np1"
+                      value="Forward"
+                    />
+                    <label for="np1">Forward</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="checkbox"
+                      name="normalplay2"
+                      id="np2"
+                      value="Midfield"
+                    /><label for="np2">Midfield</label>
+                  </div>
+                </div>
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="checkbox"
+                      name="normalplay3"
+                      id="np3"
+                      value="Defense"
+                    /><label for="np3">Defense</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="checkbox"
+                      name="normalplay4"
+                      id="np4"
+                      value="Goalkeeper"
+                    /><label for="np4">Goalkeeper</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              <span>What position(s) do you want to play?</span>
+              (check all that apply)
+            </p>
+            <div class="row">
+              <div class="column">
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="checkbox"
+                      name="wontplay1"
+                      id="wp1"
+                      value="Forward"
+                    />
+                    <label for="wp1">Forward</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="checkbox"
+                      name="wontplay2"
+                      id="wp2"
+                      value="Midfield"
+                    /><label for="wp2">Midfield</label>
+                  </div>
+                </div>
+                <div class="row1">
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="checkbox"
+                      name="wontplay3"
+                      id="wp3"
+                      value="Defense"
+                    /><label for="wp3">Defense</label>
+                  </div>
+                  <div style="flex-grow: 1;">
+                    <input
+                      type="checkbox"
+                      name="wontplay4"
+                      id="wp4"
+                      value="Goalkeeper"
+                    /><label for="wp4">Goalkeeper</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <span>Already Have a Uniform*</span>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="haveuniform"
+                  id="uni"
+                  value="Yes"
+                  required
+                />
+                <label for="uni">Yes</label>
+                <input type="radio" name="haveuniform" id="nouni" value="No" />
+                <label for="nouni">No</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div style="flex-grow: 1;">
+                <span>Jersey Size:</span>
+              </div>
+              <div style="flex-grow: 1;">
+                <span>Shorts Size:</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div style="flex-grow: 1;">
+                <select name="jersey">
+                  <option value="Youth Small">Youth Small</option>
+                  <option value="Youth Medium">Youth Medium</option>
+                  <option value="Youth Large">Youth Large</option>
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>
+                  <option value="Extra-Large">Extra-Large</option>
+                </select>
+              </div>
+
+              <div style="flex-grow: 1;">
+                <select name="shorts">
+                  <option value="Youth Small">Youth Small</option>
+                  <option value="Youth Medium">Youth Medium</option>
+                  <option value="Youth Large">Youth Large</option>
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>
+                  <option value="Extra-Large">Extra-Large</option>
+                </select>
+              </div>
+            </div>
+
+            <h3>Permission to Play</h3>
+            <p>
+              I, the parent or guardian of the minor registrant, agree that the
+              registrant and I will abide by all the rules of the Northside
+              Youth Soccer League (NYSL). In recognizing the possibility of
+              physical injury associated with soccer and in consideration for
+              the “League” accepting the registrant for its soccer programs and
+              activities, I hereby release, discharge, and/or otherwise
+              indemnify NYSL, their employees and associated personnel and
+              volunteers, including the facilities used for practices and games,
+              against any claim by or on behalf of the registrant as a result of
+              the registrant’s participation in the program and/or being
+              transported to or from NYSL sponsored activities, which
+              transportation.
+            </p>
+            <p>
+              By signing below, I hereby agree and authorize the above. In
+              addition, by signing below, I also acknowledge that I have read
+              the cancellation policy and agree to its terms
+            </p>
+
+            <div class="row">
+              <div>
+                <span>Parent/Guardian Signature*:</span>
+              </div>
+              <div style="flex-grow: 2;" class="underlined">
+                <input type="text" name="signature" required />
+              </div>
+              <div>
+                <span>Date*:</span>
+              </div>
+              <div style="flex-grow: 1;" class="underlined">
+                <input type="date" name="sigdate" required />
+              </div>
+            </div>
+            <div class="formsubmit">
+              <input type="submit" value="Kick Off" />
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Valid!"
+          /> </a
+        >&copy; Copyright 2019 Renato
+      </p>
+    </footer>
+  </body>
+</html>
